@@ -15,18 +15,18 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
 
-  <title>Title page</title>  
+  <title>Home</title>  
 
 <link href="./main.css" rel="stylesheet"></head>
 
-<body class="">
+<body class="minimal">
 <div id="site-border-left"></div>
 <div id="site-border-right"></div>
 <div id="site-border-top"></div>
 <div id="site-border-bottom"></div>
- <!-- Add your content of header -->
+<!-- Add your content of header -->
 <header>
-  <nav class="navbar  navbar-fixed-top navbar-default">
+  <nav class="navbar  navbar-fixed-top navbar-inverse">
     <div class="container">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
@@ -46,23 +46,37 @@
       </div> 
     </div>
   </nav>
-</header> 
-<footer class="footer-container text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p>© UNTITLED | Personal Website for fun. <a href="https://linkedin.com/in/qiang-liu-1abb35a2" target="_blank" title="Qiang Liu">Qiang Liu</a></p>
+</header>
+<!-- Add your site or app content here -->
+  <div class="hero-full-container background-image-container white-text-container" style="background-image: url('./assets/images/space.jpg')">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="hero-full-wrapper">
+            <div class="text-content">
+              <h1>Hello,<br>
+                <span id="typed-strings">
+                  <span>I'm Qiang Liu</span>
+                  <span>Machine Learning Engineer.</span>
+                  <span>Know nothing</span>
+                </span>
+                <span id="typed"></span>
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</footer>
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
-     navActivePage();
+     type();
+     movingBackgroundImage();
   });
 </script>
 
- <script type="text/javascript" src="./main.js"></script></body>
+
+<script type="text/javascript" src="./main.js"></script></body>
 
 </html>
